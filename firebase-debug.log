@@ -1,0 +1,57 @@
+[debug] [2024-02-24T07:32:59.516Z] ----------------------------------------------------------------------
+[debug] [2024-02-24T07:32:59.517Z] Command:       /usr/bin/node /sbin/firebase emulators:start
+[debug] [2024-02-24T07:32:59.517Z] CLI Version:   13.3.0
+[debug] [2024-02-24T07:32:59.517Z] Platform:      linux
+[debug] [2024-02-24T07:32:59.517Z] Node Version:  v21.6.1
+[debug] [2024-02-24T07:32:59.517Z] Time:          Sat Feb 24 2024 13:02:59 GMT+0530 (India Standard Time)
+[debug] [2024-02-24T07:32:59.518Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-24T07:32:59.556Z] Field ".hosting.rewrites" in "firebase.json" is possibly invalid: should be array
+[debug] [2024-02-24T07:32:59.556Z] Field ".hosting" in "firebase.json" is possibly invalid: should be array
+[debug] [2024-02-24T07:32:59.556Z] Field ".hosting" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2024-02-24T07:32:59.559Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-24T07:32:59.559Z] > authorizing via signed-in user (aad9805066254@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2024-02-24T07:32:59.566Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-24T07:32:59.566Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-24T07:32:59.566Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-02-24T07:32:59.569Z] [hub] writing locator at /tmp/hub-fbhelpdesk-af32c.json
+[debug] [2024-02-24T07:32:59.579Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-24T07:32:59.579Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-24T07:32:59.579Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2024-02-24T07:32:59.580Z] defaultcredentials: writing to file /home/shivang/.config/firebase/aad9805066254_gmail_com_application_default_credentials.json
+[debug] [2024-02-24T07:32:59.582Z] Setting GAC to /home/shivang/.config/firebase/aad9805066254_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/shivang/.config/firebase/aad9805066254_gmail_com_application_default_credentials.json"}}
+[debug] [2024-02-24T07:32:59.583Z] > refreshing access token with scopes: []
+[debug] [2024-02-24T07:32:59.584Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-24T07:32:59.585Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-24T07:33:00.920Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-24T07:33:00.920Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-24T07:33:00.925Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fbhelpdesk-af32c/adminSdkConfig [none]
+[debug] [2024-02-24T07:33:02.688Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fbhelpdesk-af32c/adminSdkConfig 200
+[debug] [2024-02-24T07:33:02.688Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fbhelpdesk-af32c/adminSdkConfig {"projectId":"fbhelpdesk-af32c","storageBucket":"fbhelpdesk-af32c.appspot.com"}
+[debug] [2024-02-24T07:33:02.695Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fbhelpdesk-af32c/sites 
+[debug] [2024-02-24T07:33:04.709Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fbhelpdesk-af32c/sites 200
+[debug] [2024-02-24T07:33:04.709Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fbhelpdesk-af32c/sites {"sites":[{"name":"projects/fbhelpdesk-af32c/sites/backend-bb","defaultUrl":"https://backend-bb.web.app","appId":"1:540535345936:web:adf4fc509aaaa59d570b95","type":"USER_SITE"},{"name":"projects/fbhelpdesk-af32c/sites/fbhelpdesk-af32c","defaultUrl":"https://fbhelpdesk-af32c.web.app","appId":"1:540535345936:web:ef7d0befa1e50277570b95","type":"DEFAULT_SITE"}]}
+[debug] [2024-02-24T07:33:04.710Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fbhelpdesk-af32c/webApps/1:540535345936:web:ef7d0befa1e50277570b95/config [none]
+[debug] [2024-02-24T07:33:05.726Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fbhelpdesk-af32c/webApps/1:540535345936:web:ef7d0befa1e50277570b95/config 200
+[debug] [2024-02-24T07:33:05.726Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fbhelpdesk-af32c/webApps/1:540535345936:web:ef7d0befa1e50277570b95/config {"projectId":"fbhelpdesk-af32c","appId":"1:540535345936:web:ef7d0befa1e50277570b95","storageBucket":"fbhelpdesk-af32c.appspot.com","apiKey":"AIzaSyCUcagKSwNY_GARLc-1B2GP2E3o5Xymymw","authDomain":"fbhelpdesk-af32c.firebaseapp.com","messagingSenderId":"540535345936","measurementId":"G-4TRW8QX0NE"}
+[debug] [2024-02-24T07:33:05.731Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fbhelpdesk-af32c [none]
+[debug] [2024-02-24T07:33:06.265Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fbhelpdesk-af32c 200
+[debug] [2024-02-24T07:33:06.265Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fbhelpdesk-af32c {"projectId":"fbhelpdesk-af32c","projectNumber":"540535345936","displayName":"fbhelpdesk","name":"projects/fbhelpdesk-af32c","resources":{"hostingSite":"fbhelpdesk-af32c"},"state":"ACTIVE","etag":"1_db27a5c3-954e-4001-9268-b0f6e392f260"}
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  hosting: Stopping Hosting Emulator {"metadata":{"emulator":{"name":"hosting"},"message":"Stopping Hosting Emulator"}}
+[info] i  eventarc: Stopping Eventarc Emulator {"metadata":{"emulator":{"name":"eventarc"},"message":"Stopping Eventarc Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2024-02-24T07:33:06.269Z] TypeError: _a.map is not a function
+    at normalize (/usr/lib/node_modules/firebase-tools/lib/hosting/config.js:155:90)
+    at Object.hostingConfig (/usr/lib/node_modules/firebase-tools/lib/hosting/config.js:182:9)
+    at Object.start (/usr/lib/node_modules/firebase-tools/lib/serve/hosting.js:91:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async HostingEmulator.start (/usr/lib/node_modules/firebase-tools/lib/emulator/hostingEmulator.js:14:27)
+    at async EmulatorRegistry.start (/usr/lib/node_modules/firebase-tools/lib/emulator/registry.js:18:9)
+    at async Object.startAll (/usr/lib/node_modules/firebase-tools/lib/emulator/controller.js:538:9)
+    at async /usr/lib/node_modules/firebase-tools/lib/commands/emulators-start.js:33:43
+[error] 
+[error] Error: An unexpected error has occurred.
